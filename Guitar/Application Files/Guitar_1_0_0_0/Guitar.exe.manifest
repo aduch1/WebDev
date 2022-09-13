@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="Guitar.exe" version="1.0.0.0" publicKeyToken="a7ffedff9039b7cf" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Guitar" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="Guitar.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Guitar.exe" size="240640">
+      <assemblyIdentity name="Guitar" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>zNBbdus50YqFXu0wwp0qAdMwSgw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=I3-PC\I3" issuerKeyHash="180cae5806d8b50b4fbdd1f59e21982d9fbe5926" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>fmBeWR8rMdGNcPJGhUa0esCxB8g=</DigestValue></Reference></SignedInfo><SignatureValue>zX9AA4BeASGXbj86uZ96np/G676Jt8kff9cAc3mXgFLq4Sd8ej+HjuMh+wzElicV+zWAgzG04BH5ETt6Wq+aZtpg3Tuk5sYWkM2MRrTMviN0P5nLBtnosfh52xKU/XjqwJlgF8EGUs11MKQ49If90pg/4RnJElt+YnB6qp8iceI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>z+ugqkUI37kttET5VLQ9qQmhL/K3ApKFue8sYgFYrtSY51kI3pun5TRt0uf2qSvcCfTBYvB9HjWrzfCwr6kja6EV0kZmE6R8MKVSg2JzZHLqgLysCwkqbgWftDXSeS8U1NaJM1NqQW1fnbEqyX0ndmEupd93qzHsCE0ncNiFdH0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c807b1c07ab4468546f2708dd1312b1f595e607e" Description="" Url=""><as:assemblyIdentity name="Guitar.exe" version="1.0.0.0" publicKeyToken="a7ffedff9039b7cf" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=I3-PC\I3</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>tOe4gdTk590fzvYri/Vi9nXs3XY=</DigestValue></Reference></SignedInfo><SignatureValue>Wlet3J1Gk8XtN33gyVLEBnfDYNCV+F13k2u5IVx3VTQrqUcXKrajmGsQGgEPzzCFkk0xnXi/E0GzRNIIz6RawVCX2vxq95IExeP3EJjrqmTh3+Qa/4OA7WpkgIjCRPNhZ76j2p5KYO7kQ9PL1t4FMvGXcNBiXX8C3ezK/q02NQQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>z+ugqkUI37kttET5VLQ9qQmhL/K3ApKFue8sYgFYrtSY51kI3pun5TRt0uf2qSvcCfTBYvB9HjWrzfCwr6kja6EV0kZmE6R8MKVSg2JzZHLqgLysCwkqbgWftDXSeS8U1NaJM1NqQW1fnbEqyX0ndmEupd93qzHsCE0ncNiFdH0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBuTCCASKgAwIBAgIQTy77uxCJQopDfcSSA8I4+jANBgkqhkiG9w0BAQUFADAbMRkwFwYDVQQDHhAASQAzAC0AUABDAFwASQAzMB4XDTEzMDUwODAyNDY0OFoXDTE0MDUwODA4NDY0OFowGzEZMBcGA1UEAx4QAEkAMwAtAFAAQwBcAEkAMzCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAz+ugqkUI37kttET5VLQ9qQmhL/K3ApKFue8sYgFYrtSY51kI3pun5TRt0uf2qSvcCfTBYvB9HjWrzfCwr6kja6EV0kZmE6R8MKVSg2JzZHLqgLysCwkqbgWftDXSeS8U1NaJM1NqQW1fnbEqyX0ndmEupd93qzHsCE0ncNiFdH0CAwEAATANBgkqhkiG9w0BAQUFAAOBgQASCwrpYBYvMl2QKvhQCnV4aWDtdL7EDlqP0oQuqGmfc4jPVtU+CWFiRUjOXWWJ3Wu8pre4VLQbSjXJ82gOaIQFSS4BoDoXanY2nr0hnULEKZ/V79sBicNAKYL7kyjrc0X5dh+TmEtrZdV9YtvMTYcycmfIuBcqUgO3X1uJ7VbuQw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
